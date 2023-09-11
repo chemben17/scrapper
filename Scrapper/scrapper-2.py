@@ -34,6 +34,7 @@ def urls(out_file):
     with open(out_file, 'a') as file:
         file.write('\n'.join(good_urls))
 
+    # Print a message indicating the successful save of URLs.
     print(f"Saved URLS {out_file}")
 
 
