@@ -27,7 +27,7 @@ def urls(out_file):
             bad_urls.append(url)
             continue
         except requests.exceptions.ConnectionError:
-
+            # If there's a 'ConnectionError' (e.g., failed to connect to the URL), add the URL to 'bad_urls'.
             bad_urls.append(url)
             continue
     with open(out_file, 'a') as file:
