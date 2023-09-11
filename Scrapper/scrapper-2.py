@@ -7,6 +7,7 @@ def urls(out_file):
     # Read a list of URLs from standard input and split them into lines.
     urls2 = sys.stdin.read().splitlines()
 
+    # Create two empty lists to store good and bad URLs.
     good_urls = []
     bad_urls = []
 
