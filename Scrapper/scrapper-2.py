@@ -4,7 +4,7 @@ import requests
 
 # Define a function named 'urls' that takes an 'out_file' parameter.
 def urls(out_file):
-
+    # Read a list of URLs from standard input and split them into lines.
     urls2 = sys.stdin.read().splitlines()
 
     good_urls = []
