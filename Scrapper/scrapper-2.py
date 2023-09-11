@@ -2,6 +2,7 @@ import sys
 import requests
 
 
+# Define a function named 'urls' that takes an 'out_file' parameter.
 def urls(out_file):
 
     urls2 = sys.stdin.read().splitlines()
