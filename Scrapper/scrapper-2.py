@@ -11,6 +11,7 @@ def urls(out_file):
     good_urls = []
     bad_urls = []
 
+    # Iterate through each URL in the 'urls2' list.
     for url in urls2:
         try:
             response = requests.head(url)
