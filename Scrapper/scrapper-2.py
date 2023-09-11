@@ -30,6 +30,7 @@ def urls(out_file):
             # If there's a 'ConnectionError' (e.g., failed to connect to the URL), add the URL to 'bad_urls'.
             bad_urls.append(url)
             continue
+        # Open the specified 'out_file' in append mode and write the 'good_urls' to i
     with open(out_file, 'a') as file:
         file.write('\n'.join(good_urls))
 
