@@ -16,13 +16,18 @@ def urls(out_file):
         # Send an HTTP HEAD request to the URL.
         try:
             response = requests.head(url)
+            # Check if the response status code is 200 (OK).
 
             if response.status_code == 200:
+                # If the status code is 200, add the URL to the 'good_urls' list.
+
                 good_urls.append(url)
         except requests.exceptions.MissingSchema:
+            # If there's a 'MissingSchema' exception (e.g., URL lacks http://), add the URL to 'bad_urls'.
             bad_urls.append(url)
             continue
         except requests.exceptions.ConnectionError:
+
             bad_urls.append(url)
             continue
     with open(out_file, 'a') as file:
