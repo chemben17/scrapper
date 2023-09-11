@@ -13,6 +13,7 @@ def urls(out_file):
 
     # Iterate through each URL in the 'urls2' list.
     for url in urls2:
+        # Send an HTTP HEAD request to the URL.
         try:
             response = requests.head(url)
 
