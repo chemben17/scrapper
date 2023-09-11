@@ -37,7 +37,7 @@ def urls(out_file):
     # Print a message indicating the successful save of URLs.
     print(f"Saved URLS {out_file}")
 
-
+# Call the 'urls' function with the 'out_file' argument to process the URLs.
 out_file = 'filtered_urls.txt'
 
 
