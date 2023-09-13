@@ -31,11 +31,14 @@ def urls(out_file):
             bad_urls.append(url)
             continue
         # Open the specified 'out_file' in append mode and write the 'good_urls' to i
-    with open(out_file, 'a') as file:
+    with open('good_urls.txt', 'a') as file:
         file.write('\n'.join(good_urls))
+    with open('bad_urls.csv', 'a') as file:
+        file.write('\n' .join(bad_urls))
 
     # Print a message indicating the successful save of URLs.
     print(f"Saved URLS {out_file}")
+
 
 # Call the 'urls' function with the 'out_file' argument to process the URLs.
 out_file = 'filtered_urls.txt'
@@ -55,6 +58,4 @@ urls(out_file)
 #             sy = requests.head(url)
 #
 #             if sy.status_code == 200:
-
-
 

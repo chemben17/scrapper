@@ -46,7 +46,7 @@ def spider_url(url, keyword):
                     print(url_join)
 
                     # opens / creates a new file and store the each elements of url_join
-                    with open("../../venv/scrapped.txt", "a") as file:
+                    with open("scrapped.txt", "a") as file:
                         file.write(url_join + "\n")
                     spider_url(url_join, keyword)
                 else:
@@ -58,5 +58,5 @@ keyword = input("Enter the keyword to search for in the URL provided")
 spider_url(url, keyword)
 
 
-# https://www.coursera.org/articles/programmer-vs-developer
+#
 # https://mktoevents.com/Microsoft+Event/399854/157-GQE-382?wt.mc_id=AID3061954_QSG_PD_SCL_645575&OCID=AID3061954_PSOC_30427418_373613168_196785845
